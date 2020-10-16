@@ -18,8 +18,8 @@ total_frames = int(capture.get(cv2.CAP_PROP_FRAME_COUNT))
 save_image_every = 0
 frame_count = 0
 
-if not os.path.exists('results'):
-    os.makedirs('results')
+if not os.path.exists(f'results/{slug_name}'):
+    os.makedirs(f'results/{slug_name}')
 
 print("Downloading every 10 frames from video")
 
